@@ -29,7 +29,7 @@
 			"type": "string",
 			"nullable": false,
 			"validation": {
-                "condition": "${length(regexall(\"^[\\\\w\\\\-\\\\.]{1,57}$\",var.vpc_name))>0}",
+                "condition": "${length(regexall(\"^[\\\\w\\\\.-]{1,57}$\",var.vpc_name))>0}",
                 "error_message": "Invalid input. Please re-enter."
             }
 		},
@@ -39,7 +39,7 @@
 			"type": "string",
 			"nullable": false,
 			"validation": {
-                "condition": "${length(regexall(\"^[\\\\w\\\\-\\\\.]{1,55}$\",var.secgroup_name))>0}",
+                "condition": "${length(regexall(\"^[\\\\w\\\\.-]{1,55}$\",var.secgroup_name))>0}",
                 "error_message": "Invalid input. Please re-enter."
             }
 		},
